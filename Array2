@@ -1,0 +1,32 @@
+<html>
+  <head>
+  <title>Array2</title>
+  </head>
+  <body>
+  <h1>Length</h1>
+  <p>To length</p>
+  <button onclick = "animals.forEach(myFunction)">Click it!</button>
+  <ul>
+    <li id="d">dragon</li>
+    <li id="s">sea-otter</li>
+    <li id="bear">bear</li>
+    <li id="bee">bee</li>
+    <li id="u">unicorn</li>
+    <li id="c">chicken</li>
+    <li id="deer">deer</li>
+    <li id="dolphin">dolphin</li>
+    <li id="f">fox</li>
+    <li id="k">koala</li>
+  </ul>
+  
+  <script>
+  var animals = ["dragon","sea-otter","bear","bee","unicorn","chicken","deer","dolphin","fox","koala"]
+  d = document.getElementById("d");
+  
+  function myFunction(item){
+    d.innerHTML = item.length + "<br>";
+  }
+  
+  </script>
+  </body>
+</html>
