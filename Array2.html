@@ -6,7 +6,7 @@
   <h1>Length</h1>
   <p>To length</p>
   <button onclick = "animals.forEach(myFunction)">Click it!</button>
-  <ul id="ul">
+  <ul>
     <li id="d">dragon</li>
     <li id="s">sea-otter</li>
     <li id="bear">bear</li>
@@ -21,10 +21,18 @@
   
   <script>
   var animals = ["dragon","sea-otter","bear","bee","unicorn","chicken","deer","dolphin","fox","koala"]
-  ul = document.getElementById("ul");
   
   function myFunction(item){
-    ul.innerHTML = item.length + "<br>";
+    document.getElementById("d").innerHTML = item.length + "<br>";
+    document.getElementById("s").innerHTML = item.length + "<br>";
+    document.getElementById("bear").innerHTML = item.length + "<br>";
+    document.getElementById("bee").innerHTML = item.length + "<br>";
+    document.getElementById("u").innerHTML = item.length + "<br>";
+    document.getElementById("c").innerHTML = item.length + "<br>";
+    document.getElementById("deer").innerHTML = item.length + "<br>";
+    document.getElementById("dolphin").innerHTML = item.length + "<br>";
+    document.getElementById("f").innerHTML = item.length + "<br>";
+    document.getElementById("k").innerHTML = item.length + "<br>";
   }
   
   </script>
