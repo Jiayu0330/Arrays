@@ -2,15 +2,20 @@
   <head>
   <title>Arrays</title>
   </head>
- <body>
+  <body>
   <h1>List of animals</h1>
-  <p id="par">We're going to show you some animals!</p>
+  <p>We're going to show you some animals!</p>
+  <button onclick = "animals.forEach(myFunction)">Click It!</button> 
+  <p id = "list"> </p>
+    
   <script>
   var animals = ["dragon","sea-otter","bear","bee","unicorn","chicken","deer","dolphin","fox","koala"]
-  animals.forEach(function(d)
-{
-  console.log(d);
-});
+  listP = document.getElementById("list");
+    
+  function myFunction(item){
+    listP.innerHTML = listP.innerHTML + "˙" + item + "<br>";
+  }
+    
   </script>
- </body>
+  </body>
 </html>
