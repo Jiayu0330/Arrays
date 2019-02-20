@@ -9,10 +9,10 @@
     
   <script>
   var animals = ["dragon","sea-otter","bear","bee","unicorn","chicken","deer","dolphin","fox","koala"]
-  listP = document.getElementById("list");
+  document.getElementById("list").innerHTML = myFunction(item);
     
   function myFunction(item){
-    return listP.innerHTML + "⋅ " + item + "<br>";
+    return item;
   }
     
   </script>
