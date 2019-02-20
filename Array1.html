@@ -4,8 +4,7 @@
   </head>
   <body>
   <h1>List of animals</h1>
-  <p>We're going to show you some animals!</p>
-  <button onclick = "animals.forEach(myFunction)">Click It!</button> 
+  <p>We're going to show you some animals!</p> 
   <p id = "list"> </p>
     
   <script>
@@ -13,7 +12,7 @@
   listP = document.getElementById("list");
     
   function myFunction(item){
-    listP.innerHTML = listP.innerHTML + "⋅ " + item + "<br>";
+    return listP.innerHTML + "⋅ " + item + "<br>";
   }
     
   </script>
