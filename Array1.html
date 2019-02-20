@@ -5,16 +5,17 @@
   <body>
   <h1>List of animals</h1>
   <p>We're going to show you some animals!</p> 
-  <p id = "list"> </p>
     
   <script>
   var animals = ["dragon","sea-otter","bear","bee","unicorn","chicken","deer","dolphin","fox","koala"]
-  document.getElementById("list").innerHTML = myFunction(item,animals);
+  document.write("<ul>");
+  
     
-  function myFunction(item,animals){
-    return item;
-  }
-    
+  animals.forEach(myFunction(item){
+    document.write("<li>" + item + "</li>")
+  });
+  
+  document.write("</ul>");
   </script>
   </body>
 </html>
