@@ -2,7 +2,7 @@
   document.write("<ul>");
   document.write("<p>bradshaw chou shabi</p>"); 
   
-  animals.forEach(myFunction(item){
+  animals.forEach(function(item){
     document.write("<li>" + item + "</li>")
   });
   
